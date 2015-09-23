@@ -89,8 +89,10 @@ imap jj <esc>
 "Auto change directory to match current file ,cd
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
 
-"easier window navigation
+"repeat with visual selection
+vnorepeat . :normal .<cr>
 
+"easier window navigation
 nmap <C-h> <C-w>h
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
